@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+            
+        </script>
         <style>
             h1{
                 border:5px solid
             }
         </style>
     </head>
-    <body style="background-color:black; color: honeydew;">
+    <body style="background-color:honeydew; color: black;">
         <!-- <h1 style="border:2px solid red;background-color:yellow">WEB</h1> -->
         <!-- 이곳은 주석입니다. 커맨드 슬래시를 누르면 됩니다. -->
         <div align="right" style="height: 50px;">
             <input type="button" value="day" style="border:1px solid grey;" onclick="
-            document.querySelector('body').style.backgroundColor='grey';
-            document.querySelector('body').style.color='black';
+            var bodyTag = document.querySelector('h1');
+            bodyTag.style.backgroundColor='grey';
+            bodyTag.style.color='black';
             document.querySelector('#a1').style.color='black';
             document.querySelector('#a2').style.color='black';
             document.querySelector('#a3').style.color='black';"
             >
             <input type="button" value="McDonalds'" style="border:1px solid grey;" onclick="
-            document.querySelector('body').style.backgroundColor='yellow';
-            document.querySelector('body').style.color='red';
+            var bodyTag = document.querySelector('h1');
+            bodyTag.style.backgroundColor='yellow';
+            bodyTag.style.color='red';
             document.querySelector('#a1').style.color='red';
             document.querySelector('#a2').style.color='red';
             document.querySelector('#a3').style.color='red';"
             >
             <input type="button" value="blackboard" style="border:1px solid grey;" onclick="
-            document.querySelector('body').style.backgroundColor='#003311';
-            document.querySelector('body').style.color='white';
+            var bodyTag = document.querySelector('h1');
+            bodyTag.style.backgroundColor='#003311';
+            bodyTag.style.color='white';
             document.querySelector('#a1').style.color='white';
             document.querySelector('#a2').style.color='white';
             document.querySelector('#a3').style.color='white';
             ">
             <input type="button" value="night" style="border:1px solid grey;" onclick="
-            document.querySelector('body').style.backgroundColor='black';
-            document.querySelector('body').style.color='white';
+            var bodyTag = document.querySelector('h1');
+            bodyTag.style.backgroundColor='black';
+            bodyTag.style.color='white';
             document.querySelector('#a1').style.color='white';
             document.querySelector('#a2').style.color='white';
             document.querySelector('#a3').style.color='white';">
