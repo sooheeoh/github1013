@@ -11,17 +11,40 @@
         <!-- <h1 style="border:2px solid red;background-color:yellow">WEB</h1> -->
         <!-- 이곳은 주석입니다. 커맨드 슬래시를 누르면 됩니다. -->
         <div align="right" style="height: 50px;">
-            <input type="button" value="day" style="border:1px solid grey;" onclick="document.querySelector('body').style.backgroundColor='grey';document.querySelector('body').style.color='black';">
-            <input type="button" value="McDonalds'" style="border:1px solid grey;" onclick="document.querySelector('body').style.backgroundColor='yellow';document.querySelector('body').style.color='red';">
-            <input type="button" value="blackboard" style="border:1px solid grey;" onclick="document.querySelector('body').style.backgroundColor='#003311';document.querySelector('body').style.color='white';">
-            <input type="button" value="night" style="border:1px solid grey;" onclick="document.querySelector('body').style.backgroundColor='black';document.querySelector('body').style.color='white';">
+            <input type="button" value="day" style="border:1px solid grey;" onclick="
+            document.querySelector('body').style.backgroundColor='grey';
+            document.querySelector('body').style.color='black';
+            document.querySelector('#a1').style.color='black';
+            document.querySelector('#a2').style.color='black';
+            document.querySelector('#a3').style.color='black';"
+            >
+            <input type="button" value="McDonalds'" style="border:1px solid grey;" onclick="
+            document.querySelector('body').style.backgroundColor='yellow';
+            document.querySelector('body').style.color='red';
+            document.querySelector('#a1').style.color='red';
+            document.querySelector('#a2').style.color='red';
+            document.querySelector('#a3').style.color='red';"
+            >
+            <input type="button" value="blackboard" style="border:1px solid grey;" onclick="
+            document.querySelector('body').style.backgroundColor='#003311';
+            document.querySelector('body').style.color='white';
+            document.querySelector('#a1').style.color='white';
+            document.querySelector('#a2').style.color='white';
+            document.querySelector('#a3').style.color='white';
+            ">
+            <input type="button" value="night" style="border:1px solid grey;" onclick="
+            document.querySelector('body').style.backgroundColor='black';
+            document.querySelector('body').style.color='white';
+            document.querySelector('#a1').style.color='white';
+            document.querySelector('#a2').style.color='white';
+            document.querySelector('#a3').style.color='white';">
         </div>
         <br>
         <h1>If there is a will, there is a way</h1>
         <ol>
-            <li>Do you remember html?</li>
-            <li>Do you remember css?</li>
-            <li>Do you know javescript?</li>
+            <li><a href="1.html" id="a1">Do you remember html?</a></li>
+            <li><a href="2.html" id="a2">Do you remember css?</a></li>
+            <li><a href="3.html" id="a3">Do you know javescript?</a></li>
         </ol>
         WEB is Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur natus minima atque itaque quos aliquam quam odio exercitationem vitae at culpa, dolorem excepturi eveniet voluptates, temporibus, ipsam veritatis nostrum consequuntur!
         <h1>Today's Learning</h1>
