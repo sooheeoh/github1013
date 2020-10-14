@@ -32,10 +32,8 @@
                 버튼의 value 값을 night로 변경한다. 
          -->
          <div align="right" style="height: 50px;">
-            <input type="button" id = "screenModeBtn" value="night" style="border:1px solid grey;" onclick="
-                var mode = document.querySelector('#screenModeBtn').value;
-                if(mode === 'night'){
-                    // 야간모드 코드
+            <script>
+                function 야간모드(){
                     var bodyTag = document.querySelector('body');
                     bodyTag.style.backgroundColor='black';
                     bodyTag.style.color='white';
@@ -45,10 +43,9 @@
                         as[i].style.color='white';
                         i=i+1;
                     }
-                    // 버튼의 value 값을 day로 변경
                     document.querySelector('#screenModeBtn').value = 'day';
-                } else {
-                    // 주간모드 코드
+                }
+                function 주간모드(){
                     var bodyTag = document.querySelector('body');
                     bodyTag.style.backgroundColor='honeydew';
                     bodyTag.style.color='black';
@@ -58,11 +55,15 @@
                         as[i].style.color='black';
                         i=i+1;
                     }
-                    // as[0].style.color='black';
-                    // as[1].style.color='black';
-                    // as[2].style.color='black';
-                    // 버튼의 value 값을 night으로 변경
                     document.querySelector('#screenModeBtn').value = 'night';
+                }
+            </script>
+            <input type="button" id = "screenModeBtn" value="night" style="border:1px solid grey;" onclick="
+                var mode = document.querySelector('#screenModeBtn').value;
+                if(mode === 'night'){
+                    야간모드();
+                } else {
+                    주간모드();
                 }
             ">
             <input type="button" value="day" style="border:1px solid grey;" onclick="
