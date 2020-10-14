@@ -1,0 +1,20 @@
+<html>
+    <body>
+    <h1>Welcome to my safe homepage</h1>
+    <script>
+        var password = "1111";
+        var inputPassword = prompt("비밀번호를 입력해주세요.")
+        console.log(password, inputPassword);
+        // 만약 사용자가 입력한 값이 1111이면
+        if(password === inputPassword){
+            // 문서에 환영합니다, 수희님!
+            document.write("환영합니다, 수희님!");
+        }
+        else {
+        // 아니라면
+        // 문서에 누구냐 너 라고 적어 브라우저야
+        document.write("누구냐 너");
+        }
+    </script>
+    </body>
+</html>
