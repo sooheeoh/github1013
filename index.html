@@ -17,9 +17,10 @@
             3. 만약 버튼의 레이블의 night이라면
                 var bodyTag = document.querySelector('body');
                 bodyTag.style.backgroundColor='honeydew';
-                document.querySelector('#a1').style.color='black';
-                document.querySelector('#a2').style.color='black';
-                document.querySelector('#a3').style.color='black';"
+                var as = document.querySelectorAll('a');
+                as[0].style.color='black';
+                as[1].style.color='black';
+                as[2].style.color='black';"
                 버튼의 value 값을 day로 변경한다. 
             아니라면 
                 var bodyTag = document.querySelector('body');
@@ -38,9 +39,12 @@
                     var bodyTag = document.querySelector('body');
                     bodyTag.style.backgroundColor='black';
                     bodyTag.style.color='white';
-                    document.querySelector('#a1').style.color='white';
-                    document.querySelector('#a2').style.color='white';
-                    document.querySelector('#a3').style.color='white';
+                    var as = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i<as.length){
+                        as[i].style.color='white';
+                        i=i+1;
+                    }
                     // 버튼의 value 값을 day로 변경
                     document.querySelector('#screenModeBtn').value = 'day';
                 } else {
@@ -48,9 +52,15 @@
                     var bodyTag = document.querySelector('body');
                     bodyTag.style.backgroundColor='honeydew';
                     bodyTag.style.color='black';
-                    document.querySelector('#a1').style.color='black';
-                    document.querySelector('#a2').style.color='black';
-                    document.querySelector('#a3').style.color='black';
+                    var as = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i<as.length){
+                        as[i].style.color='black';
+                        i=i+1;
+                    }
+                    // as[0].style.color='black';
+                    // as[1].style.color='black';
+                    // as[2].style.color='black';
                     // 버튼의 value 값을 night으로 변경
                     document.querySelector('#screenModeBtn').value = 'night';
                 }
